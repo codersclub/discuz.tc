@@ -628,7 +628,7 @@ $lang = array (
 
   'cloudaddons_ftp_path_error' => '站點 FTP 路徑錯誤，請重新填寫',
 
-  'cloudaddons_check_url_fopen_error' => '您的服務器無法訪問應用中心，這將會導致應用無法安裝。請聯繫您的服務商或者網站技術人員，確保您的服務器能夠正常訪問 addon.dismall.com',
+  'cloudaddons_check_url_fopen_error' => '您的服務器無法訪問應用中心，這將會導致應用無法安裝。請聯繫您的服務商或者網站技術人員，確保您的服務器能夠正常訪問 addon.dismall.com 或 addon1.discuz.com',
   'cloudaddons_check_gzuncompress_error' => '您的服務器不支持 Zlib，這將會導致應用無法安裝。請聯繫您的服務商或者網站技術人員。',
   'cloudaddons_check_curl_error' => '您的服務器不支持 CURL，這將會導致應用無法安裝。請聯繫您的服務商或者網站技術人員。',
   'cloudaddons_genuine_message' => '對不起，您安裝的不是正版應用，安裝程序無法繼續執行<br /><br /><a href="admin.php?action=cloudaddons&id={addonid}">點擊這裡安裝正版應用</a>',
