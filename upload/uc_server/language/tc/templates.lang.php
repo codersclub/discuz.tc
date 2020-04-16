@@ -9,7 +9,7 @@
 // by Valery Votintsev, codersclub.org
 //------------------------------------------------------
 
-$languages = array(
+$lang = array(
 	'title'		=> '標題',
 	'return'	=> '返回',
 	'dateline'	=> '時間',
@@ -196,7 +196,7 @@ $languages = array(
 	'app_api_filename_comment'	=> '應用接口文件名稱，不含路徑，默認為uc.php',
 	'app_code'			=> '應用的 UCenter 配置信息',
 	'app_code_comment'		=> '當應用的 UCenter 配置信息丟失時可複製左側的代碼到應用的配置文件中',
-
+	'app_not_add_tips' => '不能通過 URL 添加應用的可能原因：1. 通過 URL 添加應用開關被關閉；2. 連續多次錯誤輸入 UCenter 創始人密碼',
 
 	'tag_tips'		=> '設置當前應用獲取其他應用標籤數據的比例以及擴展數據模板。模板中「&#123;xxx&#125;」表示標籤數據的索引，代表相應的數據。',
 	'tag_global_template'	=> '全局模板',
@@ -284,7 +284,7 @@ $languages = array(
 	'anonymity'		=> '匿名',
 	'mail_send'		=> '發送郵件',
 	'mail_list_updated'	=> '郵件列表成功更新。',
-//vot	'mail_send'		=> '郵件發送',
+	'mail_send'		=> '郵件發送',
 
 	'setting'			=> '設置',
 	'setting_tips'			=> '',
@@ -309,6 +309,8 @@ $languages = array(
 	'setting_chatpmmemberlimit_comment'	=> '同一會話最多能有多少用戶參與設置，建議在 30 - 100 範圍內取值，0為不限制',
 	'setting_pmfloodctrl'			=> '發短消息灌水預防',
 	'setting_pmfloodctrl_comment'		=> '兩次發短消息間隔小於此時間，單位秒，0 為不限制，此舉為了限制通過機器批量發廣告',
+	'setting_addappbyurl' => '啟用通過 URL 添加應用功能',
+	'setting_addappbyurl_comment' => '是否啟用通過 URL 添加應用功能，建議只有必須通過 URL 添加應用時開啟',
 
 	'setting_user_failedtime'		=> '允許用戶登錄失敗次數',
 	'setting_user_failedtime_comment'	=> '用戶登錄失敗超過設置的數據，將在15分鐘內無法登錄，0為不限制次數',
@@ -507,5 +509,5 @@ $languages = array(
 
 //Added by Valery Votintsev, codersclub.org
 	'view_ml_new_version'		=> '查看最新的多語言版本',//'View Latest International Version',
-	'home_dev_international'	=> '多語種版本',//'International Version',
+	'home_dev_international'	=> '多語種版本',//'Multilingual Version',
 );
