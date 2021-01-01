@@ -9,15 +9,11 @@
  *      Modified by Valery Votintsev, codersclub.org
  */
 
-if(!defined('IN_DISCUZ')) {
-	exit('Access Denied');
-}
-
 $lang = array (
-  'no_simplemobiletype' => '簡易版',
+  'no_simplemobiletype' => '標準版',
   'nomobiletype' => '電腦版',
   'simplemobiletype' => '精簡版',
-  'extremelysimplemobiletype' => 'WML版',
+  'extremelysimplemobiletype' => '極簡版',
   'favorite' => '收藏',
   'my_posts' => '我的帖子',
   'new_pm' => '新短消息',

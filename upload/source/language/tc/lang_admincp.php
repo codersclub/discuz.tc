@@ -72,6 +72,7 @@ $lang = array
 	'thismonth' => '本月',
 	'thisweek' => '本周',
 	'today' => '今日',
+	'thread' => '帖子',
 	'subject' => '標題',
 	'nosubject' => '無標題',
 	'message' => '內容',
@@ -93,6 +94,7 @@ $lang = array
 	'ip' => 'IP 地址',
 	'usergroup' => '用戶組',
 	'usernum' => '用戶數：',
+	'admingroup' => '管理組',
 	'guest' => '遊客',
 	'anonymous' => '匿名',
 	'forum' => '版塊',
@@ -207,6 +209,7 @@ $lang = array
 	'num' => '數量',
 	'weight' => '重量',
 	'saveconf' => '保存為設置方案',
+	'view' => '查看',
 	'value' => '數據',
 	'hour' => '小時制',
 	'hourtime' => '小時',
@@ -389,8 +392,8 @@ $lang = array
 
 	'nav_attaches' => '論壇附件管理',
 	'nav_attaches_group' => '群組附件管理',
-	'nav_styles' => '模板風格管理',
-	'nav_templates' => '模板套繫管理',
+	'nav_styles' => '風格管理',
+	'nav_templates' => '模板管理',
 	'nav_smilies' => '表情管理',
 	'nav_click' => '表態動作',
 
@@ -410,10 +413,11 @@ $lang = array
 	'nav_share' => '分享管理',
 	'nav_postcomment' => '帖子點評管理',
 
-	'nav_plugins' => '插件管理',
+	'nav_plugins' => '插件',
 	'nav_announce' => '站點公告',
 	'nav_javascript' => '數據調用',
 	'nav_infoside' => '邊欄',
+	'nav_fileperms' => '文件權限檢查',
 	'nav_updatecounters' => '更新統計',
 
 	'nav_admingroups' => '管理組',
@@ -455,7 +459,6 @@ $lang = array
 	'nav_misc_links' => '友情鏈接',
 	'nav_misc_relatedlink' => '關聯鏈接',
 	'nav_posting_censor' => '詞語過濾',
-	'nav_remoderate' => '內容重新審核',
 	'nav_posting_bbcode' => '編輯 Discuz! 代碼',
 	'nav_thread_icon' => '主題圖標',
 	'nav_thread_stamp' => '主題鑒定',
@@ -611,7 +614,6 @@ $lang = array
 	'founder_optimizer_status' => '狀態',
 
 	'founder_optimizer_security' => '安全測試',
-	'founder_optimizer_serversec' => '底層安全',
 	'founder_optimizer_performance' => '性能優化',
 	'founder_optimizer_low' => '低',
 	'founder_optimizer_middle' => '中',
@@ -669,7 +671,7 @@ $lang = array
 	'report_optuser' => '處理人',
 	'report_opttime' => '處理時間',
 	'report_receive_tips' => '<li>下面列出了在後台有舉報管理權限的管理員及全部超級版主。</li><li>有新的舉報時將給所有選中用戶發送通知。</li><li>當有新的帖子被舉報時同時會給相應版主發送通知。</li>',
-	'report_tips' => '<li>可以根據舉報真實情況，給舉報者加減積分，<a href="'.ADMINSCRIPT.'?action=setting&operation=credits" target="_blank">設置用戶舉報獎懲使用的積分</a></li><li>多人舉報時獎懲第一個舉報人。</li>',
+	'report_tips' => '<li>可以根據舉報真實情況，給舉報者加減積分，<a href="admin.php?action=setting&operation=credits" target="_blank">設置用戶舉報獎懲使用的積分</a></li><li>多人舉報時獎懲第一個舉報人。</li>',
 	'report_need_founder' => '只有創始人可以管理此項',
 	'switch_url' => '輸入 URL',
 	'switch_upload' => '上傳文件',
@@ -716,7 +718,6 @@ $lang = array
 	'home_sys_info' => '系統信息',
 	'home_discuz_version' => 'Discuz! 程序版本',
 	'home_ucclient_version' => 'UCenter 客戶端版本',
-	'home_git_version' => '（非正式版）',
 	'home_check_newversion' => '查看最新版本',
 	'home_environment' => '服務器系統及 PHP',
 	'home_serversoftware' => '服務器軟件',
@@ -784,7 +785,7 @@ $lang = array
 	'setting_access_register_maildomain_white' => '白名單模式',
 	'setting_access_register_maildomain_black' => '黑名單模式',
 	'setting_access_register_maildomain_list' => '限制名單',
-	'setting_access_register_maildomain_list_comment' => '當郵箱的域名處於本列表中的地址時，將根據上述選項進行相應限制操作。輸入要限制的郵箱域名即可，例如屏蔽 xxx@xxx.com 的域，只需輸入 @xxx.com。每行一個域名。 ',
+	'setting_access_register_maildomain_list_comment' => '當郵箱的域名處於本列表中的地址時，將根據上述選項進行相應限制操作。輸入要限制的郵箱域名即可，例如屏蔽 xxx@xxx.com 的域，只需輸入 xxx.com。每行一個域名。',
 	'setting_access_register_ctrl' => '同一 IP 註冊間隔限制(小時)',
 	'setting_access_register_ctrl_comment' => '同一 IP 在本時間間隔內將只能註冊一個帳號，0 為不限制',
 	'setting_access_register_floodctrl' => '同一 IP 在 24 小時允許註冊的最大次數',
@@ -831,7 +832,7 @@ $lang = array
 	'setting_access_register_invite_group' => '邀請註冊用戶初始用戶組',
 	'setting_access_register_invite_group_comment' => '被邀請人的初始用戶組',
 	'setting_access_register_invite_areawhite' => '不受邀請碼限制的地區列表',
-	'setting_access_register_invite_areawhite_comment' => '當用戶處於本列表中的地址時，註冊時不受邀請碼限制。每個地區一行，例如 "北京"(不含引號)，留空為不設置。 <br />注意：如要正確無誤的判斷您 IP 地址所在的地區，請到網上下載 qqwry.dat IP 地址庫文件上傳到 "data/ipdata/" 目錄下更名為 wry.dat',
+	'setting_access_register_invite_areawhite_comment' => '當用戶處於本列表中的地址時，註冊時不受邀請碼限制。每個地區一行，例如 "北京"(不含引號)，留空為不設置。<br />注意：如要正確無誤的判斷您 IP 地址所在的地區，請到網上下載 qqwry.dat IP 地址庫文件上傳到 "data/ipdata/" 目錄下更名為 wry.dat，同時刪除 tinyipdata.dat 文件',
 	'setting_access_register_invite_ipwhite' => '不受邀請碼限制的 IP 列表',
 	'setting_access_register_invite_ipwhite_comment' => '當用戶處於本列表中的 IP 地址時，註冊時不受邀請碼限制。每個 IP 一行，既可輸入完整地址，也可只輸入 IP 開頭，例如 "192.168."(不含引號) 可匹配 192.168.0.0～192.168.255.255 範圍內的所有地址，留空為不設置',
 	'setting_access_register_connect_birthday' => 'QQ註冊時必填生日',
@@ -1040,7 +1041,6 @@ $lang = array
 	'setting_styles_viewthread_maxsigrows' => '簽名最大高度(px)',
 	'setting_styles_viewthread_maxsigrows_comment' => '設置帖子中允許顯示簽名的最大高度',
 	'setting_styles_viewthread_sigviewcond' => '簽名顯示條件',
-	'setting_styles_viewthread_sigimgclick_on' => '取消簽名圖片的動態放大功能',
 	'setting_styles_viewthread_sigviewcond_comment' => '只有帖子字數大於指定數值後才顯示簽名，0為不限制',
 	'setting_styles_viewthread_author_onleft' => '作者用戶名顯示位置',
 	'setting_styles_viewthread_author_onleft_comment' => '顯示位置並不會影響論壇的性能和美觀，請根據您會員的瀏覽習慣進行選擇',
@@ -1065,6 +1065,7 @@ $lang = array
 	'setting_styles_viewthread_userinfo_creditinfo' => '信用度',
 	'setting_styles_viewthread_userinfo_follower' => '聽眾數',
 	'setting_styles_viewthread_userinfo_following' => '收聽數',
+	'setting_styles_viewthread_userinfo_friends' => '好友',
 	'setting_styles_viewthread_userinfo_readperm' => '閱讀權限',
 	'setting_styles_viewthread_userinfo_gender' => '性別',
 	'setting_styles_viewthread_userinfo_location' => '來自',
@@ -1174,8 +1175,6 @@ $lang = array
 	'setting_follow_base_default_follow_retain_day_comment' => '廣播超過多少天移入存檔表(單位：天)',
 	'setting_follow_base_default_view_profile' => '默認查看個人資料',
 	'setting_follow_base_default_view_profile_comment' => '該設置對管理員有效，開啟後默認管理員查看將直接查看個人資料頁面',
-	'setting_follow_base_default_follow_add_notice' => '被關注時通知被關注者',
-	'setting_follow_base_default_follow_add_notice_comment' => '開啟後用戶被關注時將會收到通知',
 	'setting_home' => '空間設置',
 	'setting_home_base' => '基本設置',
 	'setting_home_base_feedday' => '動態保留天數',
@@ -1222,10 +1221,10 @@ $lang = array
 	'setting_home_base_networkpage_comment' => '該設置只對排行榜中的競價排行、在線成員、全部成員有效',
 	'setting_home_base_topcachetime' => '成員排行榜緩存時間(單位：分鐘)',
 	'setting_home_base_topcachetime_comment' => '用戶排行榜中，除競價排行、在線成員、全部成員外，其餘排行榜是緩存處理的。<br>請根據服務器的負載情況，設置合理的更新時間間隔。最少不能低於5分鐘',
-	'setting_home_base_starcredit' => '星星經驗閾值',
-	'setting_home_base_starcredit_comment' => '(默認為 100)當用戶經驗數到此閾值時，增加一個星星。最小為2，否則此功能無效，不顯示星星數',
-	'setting_home_base_starlevelnum' => '星星升級閾值',
-	'setting_home_base_starlevelnum_comment' => '(默認為 5)星星數在達到此閾值時，會升級為高級別的圖標。最小為2，否則此項功能無效，始終以星星顯示',
+	'setting_home_base_starcredit' => '星星經驗閥值',
+	'setting_home_base_starcredit_comment' => '(默認為 100)當用戶經驗數到此閥值時，增加一個星星。最小為2，否則此功能無效，不顯示星星數',
+	'setting_home_base_starlevelnum' => '星星升級閥值',
+	'setting_home_base_starlevelnum_comment' => '(默認為 5)星星數在達到此閥值時，會升級為高級別的圖標。最小為2，否則此項功能無效，始終以星星顯示',
 	'setting_home_base_groupnum' => '好友用戶組個數',
 	'setting_home_base_groupnum_comment' => '(默認為 8)設置每個用戶最多擁有的好友用戶組個數',
 	'setting_home_base_default_follow_forum' => '廣播帖默認版塊',
@@ -1290,7 +1289,6 @@ $lang = array
 	'setting_home_privacy' => '隱私設置',
 	'setting_home_privacy_new_user' => '新用戶默認隱私設置',
 	'setting_home_privacy_view_index' => '個人空間首頁',
-	'setting_home_privacy_view_profile' => '個人空間資料',
 	'setting_home_privacy_alluser' => '全站用戶可見',
 	'setting_home_privacy_friend' => '僅好友可見',
 	'setting_home_privacy_self' => '僅自己可見',
@@ -1694,9 +1692,7 @@ $lang = array
 	'setting_functions_mod_warningexpiration_comment' => '默認為 30 天',
 	'setting_functions_mod_reasons' => '管理操作理由選項',
 	'setting_functions_user_reasons' => '用戶評分理由選項',
-	'setting_functions_mod_reasons_public' => '是否公開管理操作理由',
 	'setting_functions_mod_reasons_comment' => '本設定將在用戶執行部分管理操作時顯示，每個理由一行，如果空行則顯示一行分隔符「--------」，用戶可選擇本設定中預置的理由選項或自行輸入',
-	'setting_functions_mod_reasons_public_comment' => '開啟後點擊主題帖下方主題操作記錄將同時顯示管理操作理由',
 	'setting_functions_user_reasons_comment' => '本設定將在用戶執行評分時顯示，每個理由一行，如果空行則顯示一行分隔符「--------」，用戶可選擇本設定中預置的理由選項或自行輸入',
 	'setting_functions_mod_bannedmessages' => '隱藏敏感帖子內容',
 	'setting_functions_mod_bannedmessages_comment' => '選擇相應項目將隱藏被刪除或被禁止的用戶的相關資料，在相關資料處顯示被屏蔽的字樣',
@@ -1797,7 +1793,6 @@ $lang = array
 	'setting_functions_makehtml_topichtmldir_invalid' => '專題HTML文件的存放目錄只能包含字母、數字、下劃線(_)和\,請確認存放目錄的合法性',
 	'setting_functions_makehtml_indexname' => '門戶首頁靜態文件名',
 	'setting_functions_makehtml_indexname_comment' => '生成門戶首頁的靜態文件名，默認為index，不帶擴展名',
-	'setting_functions_makehtml_indexname_invalid' => '門戶首頁靜態文件名只能包含字母、數字、下劃線(_)，請確認文件名的合法性',
 	'setting_functions_makehtml_extendname' => '靜態文件擴展名',
 	'setting_functions_makehtml_extendname_comment' => '所有靜態文件的擴展名，默認為html',
 	'setting_functions_makehtml_make_has_no_foldername' => '<span title="此文章所屬頻道未設置目錄名稱">生成</span>',
@@ -1819,8 +1814,6 @@ $lang = array
 	'setting_functions_other_uidlogin_comment' => '選擇「是」，站點登錄時允許通過 UID的方式登錄驗證',
 	'setting_functions_other_autoidselect' => '啟用登錄自動選擇帳號',
 	'setting_functions_other_autoidselect_comment' => '選擇「是」，站點登錄時的將自動按 UID、E-mail、用戶名的順序逐一去匹配，其中UID驗證只有UID登錄方式被啟用後才有效',
-	'setting_functions_other_submitlock' => '<span class="spectitle">啟用表單防並發功能</span>',
-	'setting_functions_other_submitlock_comment' => '選擇“是”，將會防止用戶同一時間提交多次表單，可有效防止可能刷分的問題。注意: 在未使用內存緩存(Redis、Memcached)的情況下，本功能可能會加重服務器負擔',
 	'setting_functions_other_rssstatus' => '<span class="spectitle">啟用 RSS</span>',
 	'setting_functions_other_rssstatus_comment' => '選擇「是」，將允許用戶使用 RSS 客戶端軟件接收最新的帖子、文章更新。注意: 在分類很多的情況下，本功能可能會加重服務器負擔',
 	'setting_functions_other_rssttl' => '<span class="spectitle">RSS TTL(分鐘)</span>',
@@ -1892,7 +1885,7 @@ $lang = array
 	'setting_permissions_allowviewuserthread_comment' => '設置是否允許查看其他用戶的主題和帖子，選擇相應的版塊那麼在個人空間將出現「主題」模塊和鏈接',
 	'setting_permissions_allowviewuserthread_forum_group' => '所有版塊和群組',
 	'setting_permissions_allowviewuserthread_fids' => '允許查看哪些版塊的帖子',
-	'setting_permissions_allowviewuserthread_fids_comment' => '設置允許查看其他用戶哪些版塊的主題和帖子，可以按住 CTRL 多選',
+	'setting_permissions_allowviewuserthread_fids_comment' => '設置允許查看其他用戶哪些版塊的主題和帖子',
 	'setting_permissions_allowmoderatingthread' => '是否提示用戶自己有未審核的主題或者帖子',
 	'setting_permissions_allowmoderatingthread_comment' => '選擇「是」，用戶如果有正在審核的主題，將可以在帖子列表頁看到提示',
 	'setting_permissions_memliststatus' => '允許查看會員列表',
@@ -1911,8 +1904,6 @@ $lang = array
 	'setting_permissions_minpostsize_mobile_comment' => '是否單獨為手機客戶端設置發帖的最小字節數，0 為不單獨設置',
 	'setting_permissions_maxpostsize' => '帖子最大字數(字節)',
 	'setting_permissions_maxpostsize_comment' => '管理組成員可通過「發帖不受限制」設置而不受影響',
-	'setting_permissions_mailinterval' => '郵件發送時間間隔',
-	'setting_permissions_mailinterval_comment' =>  '設定郵件發送時間間隔，默認為 300 秒',
 	'setting_permissions_maxpolloptions' => '投票最大選項數:',
 	'setting_permissions_maxpolloptions_comment' => '設定發佈投票包含的最大選項數',
 	'setting_permissions_favorite_storage_comment' => '允許收藏的最大版塊 / 主題數，默認為100',
@@ -1922,10 +1913,6 @@ $lang = array
 	'setting_permissions_editby_comment' => '在 60 秒後編輯帖子添加「本帖由 xxx 於 xxxx-xx-xx 編輯」字樣。管理員編輯不受此限制',
 	'setting_permissions_post_append' => '啟用帖子補充功能',
 	'setting_permissions_post_append_comment' => '啟用後，當用戶無法編輯自己的帖子時，可以補充內容',
-	'setting_permissions_nsprofiles' => '個人空間內不展現個人信息',
-	'setting_permissions_nsprofiles_comment' => '啟用後個人空間內將不展現個人信息',
-	'setting_permissions_modasban' => '不忽略審核關鍵詞',
-	'setting_permissions_modasban_comment' => '啟用後在不支持審核關鍵詞的模塊內發現此類關鍵詞將拒絕提交，關閉則允許提交',
 
 	'setting_credits' => '積分設置',
 	'setting_credits_base' => '基本設置',
@@ -2042,7 +2029,6 @@ $lang = array
 	'setting_mail_setting' => '設置',
 	'setting_mail_setting_silent' => '屏蔽郵件發送中的全部錯誤提示',
 	'setting_mail_setting_send' => '郵件發送方式',
-	'setting_mail_setting_send_comment' => '如需使用 SSL 加密的 SMTP 發送，請在服務器地址前添加 ssl:// 並調整端口號。',
 	'setting_mail_setting_send_1' => '通過 PHP 函數的 sendmail 發送(推薦此方式)',
 	'setting_mail_setting_send_2' => '通過 SOCKET 連接 SMTP 服務器發送(支持 ESMTP 驗證)',
 	'setting_mail_setting_send_3' => '通過 PHP 函數 SMTP 發送 Email(僅 Windows 主機下有效，不支持 ESMTP 驗證)',
@@ -2277,7 +2263,7 @@ $lang = array
 	'setting_datetime_postmodperiods' => '發帖審核時間段',
 	'setting_datetime_postmodperiods_comment' => '每天該時間段內用戶發帖不直接顯示，需經版主或管理員人工審核才能發表，格式和用法同上',
 	'setting_datetime_postignorearea' => '發帖不受時間限制的地區列表',
-	'setting_datetime_postignorearea_comment' => '當用戶處於本列表中的地址時，發帖不受時間段限制。每個地區一行，例如 "北京"(不含引號)，留空為不設置。 <br />注意：如要正確無誤的判斷您 IP 地址所在的地區，請到網上下載 qqwry.dat IP 地址庫文件上傳到 "data/ipdata/" 目錄下更名為 wry.dat',
+	'setting_datetime_postignorearea_comment' => '當用戶處於本列表中的地址時，發帖不受時間段限制。每個地區一行，例如 "北京"(不含引號)，留空為不設置。<br />注意：如要正確無誤的判斷您 IP 地址所在的地區，請到網上下載 qqwry.dat IP 地址庫文件上傳到 "data/ipdata/" 目錄下更名為 wry.dat，同時刪除 tinyipdata.dat 文件',
 	'setting_datetime_postignoreip' => '發帖不受時間限制的IP列表',
 	'setting_datetime_postignoreip_comment' => '當用戶處於本列表中的 IP 地址時，發帖不受時間段限制。每個 IP 一行，既可輸入完整地址，也可只輸入 IP 開頭，例如 "192.168."(不含引號) 可匹配 192.168.0.0～192.168.255.255 範圍內的所有地址，留空為不設置',
 	'setting_datetime_searchbanperiods' => '禁止全文搜索時間段',
@@ -2295,9 +2281,7 @@ $lang = array
 	'setting_sec_accountguard_loginpwcheck_prompt' => '開啟並提示',
 	'setting_sec_accountguard_loginpwcheck_force' => '開啟並強制修改弱密碼',
 	'setting_sec_accountguard_loginoutofdate' => '異常登錄檢測',
-	'setting_sec_accountguard_loginoutofdate_comment' => '當用戶距離上次登錄超過一定期限時，帳號會進入未審核組，用戶可以通過驗證郵箱或者申訴解凍帳號，QQ登錄的用戶不受此功能影響 <a href="'.ADMINSCRIPT.'?action=moderate&operation=members">審核用戶</a>',
-	'setting_sec_accountguard_loginoutofdatenum' => '異常登錄檢測天數',
-	'setting_sec_accountguard_loginoutofdatenum_comment' => '配置異常登錄檢測天數，默認值為 90 天',
+	'setting_sec_accountguard_loginoutofdate_comment' => '當用戶異地登錄且距離上次登錄超過 90 天時，帳號會進入未審核組，用戶可以通過驗證郵箱或者申訴解凍帳號，QQ登錄的用戶不受此功能影響 <a href="'.ADMINSCRIPT.'?frames=yes&action=moderate&operation=members">審核用戶</a>',
 
 
 	'setting_attach' => '上傳設置',
@@ -2321,7 +2305,7 @@ $lang = array
 	'setting_attach_basic_multi' => '批量上傳',
 	'setting_attach_basic_simple' => '普通上傳',
 	'setting_attach_basic_allowattachurl' => '附件 URL 地址、媒體附件播放',
-	'setting_attach_basic_allowattachurl_comment' => '開啟附件URL 地址後，上傳附件的地址可通過"attach://aid" 方式在任何帖內引用，並支持媒體類附件的直接播放，此項設置需要在<a href="'.ADMINSCRIPT. '?action=usergroups">用戶組</a> - 帖子相關中允許用戶組使用多媒體代碼，並保證config_global.php 配置的本地文件讀取模式為1 或4 方可生效',
+	'setting_attach_basic_allowattachurl_comment' => '開啟附件 URL 地址後，上傳附件的地址可通過 "attach://aid" 方式在任何帖內引用，並支持媒體類附件的直接播放，此項設置需要在 <a href="'.ADMINSCRIPT.'?action=usergroups">用戶組</a> - 帖子相關 中允許用戶組使用多媒體代碼方可生效',
 	'setting_attach_basic_swfupload_comment' => '批量上傳採用 Flash 機制上傳，可一次上傳多個附件，上傳時還會有進度顯示',
 
 	'setting_attach_forumattach' => '論壇附件',
@@ -2344,8 +2328,6 @@ $lang = array
 	'setting_attach_basic_thumbsource_comment' => '選擇「是」，將直接縮放原圖，而不生成縮略圖文件',
 	'setting_attach_image_thumbsourcewidthheight' => '原圖縮放大小',
 	'setting_attach_image_thumbsourcewidthheight_comment' => '設置原圖的大小，所有大於此尺寸的圖片附件將縮小到指定大小',
-	'setting_attach_image_gdlimit' => 'GD 圖片像素點上限',
-	'setting_attach_image_gdlimit_comment' => '設置 GD 圖片像素點上限，數值越大需要的服務器內存也越多，超過默認值 16777216 的站點需要在 php.ini 中設置更大的 memory_limit 以適應此配置',
 	'setting_attach_image_thumbquality' => '縮略圖質量',
 	'setting_attach_image_thumbquality_comment' => '設置圖片附件縮略圖的質量參數，範圍為 0～100 的整數，數值越大結果圖片效果越好，但尺寸也越大',
 	'setting_attach_image_disabledmobile' => '是否生成手機版縮略圖',
@@ -2486,13 +2468,9 @@ $lang = array
 	'setting_search_status_comment' => '勾選您要開啟的搜索欄目',
 	'setting_search_onoff' => '開啟',
 	'search_item_name' => '搜索項目',
-
-	'setting_search_srchsetting' => '搜索選項設置',
-	'setting_search_srchcensor' => '搜索受詞語過濾控制',
-
 	'setting_search_srchhotkeywords' => '熱門關鍵詞',
 	'setting_search_srchhotkeywords_comment' => '每行一個',
-	'setting_search_srchhotkeywords_disabled' => '<strong>您已開啟縱橫搜索服務，搜索相關設置請到<a href="'.ADMINSCRIPT.'?action=cloud&operation=search">雲平台->縱橫搜索</a> 設置</strong>',
+	'setting_search_srchhotkeywords_disabled' => '<strong>您已開啟縱橫搜索服務，搜索相關設置請到 <a href="admin.php?action=cloud&operation=search">雲平台->縱橫搜索</a> 設置</strong>',
 
 	'settings_sphinx' => 'Sphinx 全文檢索設置',
 	'settings_sphinx_sphinxon' => '是否開啟',
@@ -2534,10 +2512,6 @@ $lang = array
 	'setting_ranklist_cache_time' => '緩存時間(單位：小時)',
 	'setting_ranklist_ignorefid' => '不參與排行的版塊/群組',
 	'setting_ranklist_ignorefid_comment' => '填入版塊ID或群組ID，對應版塊及下面的主題將不進入排行榜，多個版塊ID間請用半角逗號 "," 隔開',
-	'setting_ranklist_member_show' => '競價排名功能開啟',
-	'setting_ranklist_member_show_comment' => '開啟用戶模塊下競價排名功能',
-	'setting_ranklist_member_show_announcement' => '競價排名功能公告信息',
-	'setting_ranklist_member_show_announcement_comment' => '填入競價排名功能公告信息',
 	'setting_ranklist_show_num' => '顯示條數',
 	'setting_ranklist_block_comment' => '請根據服務器的負載情況，設置合理的更新時間間隔，建議最少不能低於 5 小時。顯示條數越多負載越高，建議最多不要超過100條，默認為 20 條',
 	'setting_ranklist_show_num_comment' => '更改條數後，緩存更新後才會顯示',
@@ -2550,7 +2524,7 @@ $lang = array
 
 	'tag' => '標籤管理',
 	'tag_set' => '設置',
-	'tag_enable' => '是否啟用標籤',
+	'tag_status' => '是否啟用標籤',
 	'tag_tagitem_num' => '標籤關聯主題數量',
 	'tag_tagitem_num_comment' => '設置主題帖關聯相關標籤主題的數量，0 為不關聯。注意: 數量太大會消耗服務器資源，推薦數目 10',
 	'tag_index_num' => '首頁顯示標籤數量',
@@ -2603,15 +2577,15 @@ $lang = array
 	'usertag_user' => '用戶',
 	'usertag_send_notice' => '發通知',
 	'mobile' => '手機',
-	'setting_mobile' => '手機版設置',
+	'setting_mobile' => '手機版訪問設置',
 	'setting_mobile_status' => '手機版全局設置',
 	'setting_mobile_index' => '首頁推薦設置',
 	'setting_mobile_forums' => '版塊設置',
 	'setting_mobile_status_tips' => '<li>提供方便手機方式瀏覽的頁面，此功能僅限論壇範圍內。</li><li>本手機功能頁僅支持WAP2.0(XHTML方式)以上的手機瀏覽器進行訪問。</li><li>手機瀏覽圖片寬度為200像素以內縮略圖。</li>',
 	'setting_mobile_allowmobile' => '開啟手機版',
 	'setting_mobile_allowmobile_comment' => '開啟本功能，用戶使用手機訪問論壇時，將自動跳轉到手機版界面<br />手機訪問域名配置請進入: <a href="?action=domain&operation=app">全局 - 域名設置 - 應用域名</a><br />底部導航設置請進入：<a href="?action=nav&operation=footernav">界面 - 導航設置 - 底部導航</a>',
-	'setting_mobile_allowmnew' => '啟用本地化微社區前端',
-	'setting_mobile_allowmnew_comment' => '使用本地化微社區前端，本地化微社區前端的URL為“' . $_G['siteurl'] . 'm/”。<br />開啟後本端架構將替換為替換的手機版體系，但<b>不支持第三方插件以及搜索引擎收錄，請謹慎使用</b>',
+	'setting_mobile_allowmnew' => '启用新触屏版',
+	'setting_mobile_allowmnew_comment' => '使用新触屏版，新触屏版的 URL 为“' . $_G['siteurl'] . 'm/”',
 	'setting_mobile_mobileforward' => '開啟手機瀏覽器自動跳轉',
 	'setting_mobile_mobileforward_comment' => '開啟後用戶使用手機瀏覽器訪問社區論壇功能頁以外頁面時自動跳轉到論壇首頁進行訪問',
 	'setting_mobile_otherindex' => '允許非論壇作為首頁',
@@ -2624,8 +2598,8 @@ $lang = array
 	'setting_mobile_hotthread_comment' => '「觸屏版」功能，開啟則在首頁顯示熱貼',
 	'setting_mobile_displayorder3' => '是否顯示置頂貼',
 	'setting_mobile_displayorder3_comment' => '「觸屏版」功能，在帖子列表頁面中是否顯示置頂貼，否為不顯示',
-	'setting_mobile_simpletype' => '開啟無圖模式',
-	'setting_mobile_simpletype_comment' => '默認顯示圖片，開啟後，“觸屏版”不顯示帖子圖片，“簡易版”不顯示帖子圖片、小圖標、主題列表日期等頁面元素',
+	'setting_mobile_simpletype' => '開啟不顯示圖片',
+	'setting_mobile_simpletype_comment' => '默認顯示圖片，開啟後，「觸屏版」不顯示帖子圖片，「標準版」不顯示帖子圖片、小圖標、主題列表日期等頁面元素',
 	'setting_mobile_simpletype_yes' => '無圖精簡版',
 	'setting_mobile_simpletype_no' => '標準版',
 	'setting_mobile_topicperpage' => '每頁顯示主題數',
@@ -2638,8 +2612,8 @@ $lang = array
 	'setting_mobile_index_forumview_comment' => '如「收起」，論壇首頁將默認只展示分區標題<br />用戶需點擊分區展開該分區下的版塊列表',
 	'setting_mobile_come_from' => '手機發帖來源自定義',
 	'setting_mobile_come_from_comment' => '默認留空，如果填寫，將在看帖頁面"來自手機"處增加自定義文字或圖標<br />如:&lt;a href=\'http://m.x.com\'&gt;手機頻道&lt;/a&gt;<br />此處支持HTML標籤有：&lt;a&gt;&lt;font&gt;&lt;span&gt;&lt;strong&gt;&lt;b&gt;&lt;img&gt;<br />如果使用圖標，請保證圖片高度在16px(像素)以內',
-	'setting_mobile_wml' => '是否啟用WML版',
-	'setting_mobile_wml_comment' => 'WML版為一些僅支持WML語言的較早期的設備瀏覽網站的內容',
+	'setting_mobile_wml' => '是否啟用極簡版',
+	'setting_mobile_wml_comment' => '極簡版為一些僅支持WML語言的較早期的設備瀏覽網站的內容',
 	'pack' => '收起',
 	'unwind' => '展開',
 
@@ -2737,11 +2711,11 @@ $lang = array
 	'forums_grid_show_grid' => '是否開啟首頁四格',
 	'forums_grid_show_grid_comment' => '在論壇首頁展示四格內容',
 	'forums_grid_style_type' => '展示風格',
-	'forums_grid_style_type_comment' => '圖文並茂: 幻燈+新帖+新回复+熱帖; 簡潔文字：新帖+新回复+熱帖+精華貼；',
+	'forums_grid_style_type_comment' => '圖文並茂: 幻燈+新帖+新回復+熱帖; 簡潔文字：新帖+新回復+精華貼+精華貼；',
 	'forums_grid_style_image' => '圖文並茂',
 	'forums_grid_style_text' => '簡潔文字',
 	'forums_grid_data_source' => '數據來源版塊',
-	'forums_grid_data_source_comment' => '數據來源版塊，默認為所有版塊，可以按住 CTRL 多選',
+	'forums_grid_data_source_comment' => '數據來源版塊,默認為所有版塊',
 	'forums_grid_text_length' => '標題截取長度',
 	'forums_grid_text_length_comment' => '設置標題的最大長度，超過的部分將被截取掉, 單位：字符',
 	'forums_grid_high_light' => '是否顯示主題高亮',
@@ -3243,13 +3217,11 @@ $lang = array
 	'nav_mynav_add' => '添加快捷導航',
 	'nav_spacenav_tips' => '以下導航鏈接在「家園展示風格」中啟用「以SNS模塊風格展示」時有效',
 
-	'styles' => '模板',
-	'styles_admin' => '模板管理',
-	'styles_list' => '模板列表',
+	'styles' => '風格管理',
+	'styles_admin' => '風格管理',
 	'styles_admin_tips' => '<li>如果把導出的風格文件放置在模板目錄下，則可以通過風格管理直接安裝風格</li>',
 	'styles_admin_name' => '方案名稱',
 	'styles_admin_template' => '所用模板',
-	'styles_home_tips' => '<li>手機版模板需要開啟手機版以後才能生效，<a href="?action=setting&operation=mobile">前往手機版設置</a></li><li>如果您是模板開發者，請閱讀《<a href="https://open.dismall.com/?ac=document&amp;page=dev_template" target="_blank">Discuz! 技術文檔</a>》中的內容，並開啟設計模式。</li>',
 	'styles_tips' => '<li>由於擴展配色會重定義某些風格變量，因此某些風格變量可能只對默認配色有效</li>',
 
 	'styles_edit' => '編輯風格',
@@ -3382,32 +3354,16 @@ $lang = array
 
 	'styles_default' => '默認風格',
 	'styles_default0' => '電腦版',
-	'styles_default1' => '手機簡易版',
+	'styles_default1' => '手機標準版',
 	'styles_default2' => '手機觸屏版',
-	'styles_default3' => '手機WML版',
+	'styles_default3' => '手機極簡版',
 
 	'styles_import' => '導入界面方案',
 	'styles_import_ignore_version' => '允許導入老版本 Discuz! 的界面(易產生錯誤!!)',
 	'styles_import_version_invalid' => '版本號不匹配，當前版本：{cur_version}，系統版本：{set_version}',
 
-	'styles_validator_nowupgrade' => '以下模板現在可以更新為新版本，點擊安裝更新',
-	'styles_validator_newversion' => '以下模板存在新版本，點擊安裝更新',
-	'styles_validator_error' => '以下模板不是正版模板，點擊安裝正版模板',
-
-	'templates_admin' => '模板套繫管理',
+	'templates_admin' => '模板管理',
 	'templates_admin_name' => '模板名稱',
-	'templates_add' => '設計新模板',
-	'templates_add_tips' => '<li><b>本功能僅供模板開發者使用。</b></li><li>模板開發人員在使用本功能前請務必仔細閱讀《<a href="https://open.dismall.com/?!devdoc" target="_blank">Discuz! 技術文檔</a>》中的內容。</li><li>警告: 不正確的模板設計或安裝可能危及到整個站點的正常使用。</li>',
-	'templates_edit_name' => '模板名稱(name)',
-	'templates_edit_name_comment' => '此模板的名稱，中英文均可，最多 40 個字節',
-	'templates_edit_copyright' => '版權信息(copyright)',
-	'templates_edit_copyright_comment' => '設置模板的版權信息，最多 100 個字節，一旦設置無法更改',
-	'templates_edit_identifier' => '唯一標識符(identifier)',
-	'templates_edit_identifier_comment' => '模板的唯一英文標識，不能夠與現有模板標識重複。可使用字母、數字、下劃線命名，不能包含其他符號或特殊字符，需以字母開頭，最大 40 個字節',
-	'templates_edit_style' => '初始化模板設置',
-	'templates_edit_style_comment' => '使用已經存在的模板設置初始化本模板，或創建空白設置的模板',
-	'templates_empty' => '空',
-	'templates_question' => '模板問題求助',
 
 	'templates_maint' => '模板維護',
 	'templates_maint_default_comment' => '<li>您正在修改默認模板，為了擴充其他模板的方便，強烈建議您不要對默認模板的內容進行修改。</li><li>如要修改請將要修改的模板文件複製到其他模板目錄後再修改。</li>',
@@ -3493,9 +3449,11 @@ $lang = array
 	'members_edit_online_total' => '總在線時間(分鐘)',
 	'members_edit_online_thismonth' => '本月在線時間(分鐘)',
 	'members_edit_regip' => '註冊 IP',
+	'members_edit_regport' => '註冊端口號',
 	'members_edit_regdate' => '註冊時間',
 	'members_edit_lastvisit' => '上次訪問',
 	'members_edit_lastip' => '上次訪問 IP',
+	'members_edit_port' => '上次訪問端口號',
 	'members_edit_addsize' => '額外附件容量',
 	'members_edit_addfriend' => '額外好友數',
 	'members_edit_statistics' => '統計信息',
@@ -3583,7 +3541,6 @@ $lang = array
 	'members_ban_validity_comment' => '在有效期過後該用戶可以自動解除限制，成為普通用戶',
 	'members_ban_delpost' => '帖子',
 	'members_ban_delfollow' => '廣播',
-	'members_ban_delothers' => '雜項',
 	'members_ban_delblog' => '日誌',
 	'members_ban_delalbum' => '相冊',
 	'members_ban_deldoing' => '記錄',
@@ -3644,6 +3601,8 @@ $lang = array
 	'members_search_nonemedal' => '暫時沒有可用勳章',
 	'members_search_noneusertags' => '暫時沒有用戶標籤',
 
+	'members_verify' => '審核資料',
+
 	'members_verify_tips' => '<li>可以批量操作</li>',
 	'members_verify_pass' => '通過',
 	'members_verify_pass_with_group' => '並升到用戶組',
@@ -3664,6 +3623,7 @@ $lang = array
 	'members_verify_base' => '基本設置',
 	'members_verify_add' => '添加認證',
 	'members_verify_verify' => '審核資料',
+	'members_verify_setting' => '用戶認證設置',
 	'members_verify_available' => '啟用',
 	'members_verify_id' => '認證代號',
 	'members_verify_title' => '認證名稱',
@@ -3678,7 +3638,10 @@ $lang = array
 	'members_verify_view_video_photo_comment' => '該設置限制了未通過視頻認證用戶是否有權限查看認證通過的認證照片',
 	'members_verify_uid' => '用戶 UID',
 	'members_verify_username' => '用戶名',
+	'members_verify_dateline' => '提交時間',
 	'members_verify_info' => '審核信息',
+	'members_verify_oldvalue' => '當前信息',
+	'members_verify_newvalue' => '提交信息',
 	'members_verify_type' => '審核類型',
 	'members_verify_fieldid' => '審核項',
 	'members_verify_profile' => '資料審核',
@@ -3710,7 +3673,7 @@ $lang = array
 	'members_newsletter_posttype' => '內容解析方式',
 	'members_newsletter_posttype_text' => '文本方式',
 	'members_newsletter_posttype_html' => 'html方式',
-	'members_newsletter_mobile_tips' => '<li>您可以通過該功能給手機客戶端用戶發送通知，為了您更好的觸達用戶建議大力推廣我們的手機客戶端。</li><li>要使用本功能需要開啟雲平台服務、手機客戶端插件</li><li><strong>請關注應用中心中"<a href="https://addon.dismall.com/?@mobile.plugin" target="_blank">手機客戶端</a>"的更新，功能啟用時將會在插件中做詳細說明</strong></li>',
+	'members_newsletter_mobile_tips' => '<li>您可以通過該功能給手機客戶端用戶發送通知，為了您更好的觸達用戶建議大力推廣我們的手機客戶端。</li><li>要使用本功能需要開啟雲平台服務、手機客戶端插件</li><li><strong>請關注應用中心中"<a href="https://addon.dismall.com/?@mobile.plugin">手機客戶端</a>"的更新，功能啟用時將會在插件中做詳細說明</strong></li>',
 
 	'members_grouppmlist' => '群發短消息記錄',
 	'members_grouppmlist_newsletter' => '發送通知',
@@ -3767,10 +3730,10 @@ $lang = array
 	'members_repeat' => '馬甲',
 
 	'members_ipban' => '禁止 IP',
-	'members_ipban_tips' => '<li>此操作需要在管理組內開啟相關權限。</li><li>如果您是站點管理員，可以使用「*」作為通配符禁止某段地址。</li><li>如果您不是站點管理員，您將無法使用「*」且只能對自己添加的項目進行編輯或刪除。</li>',
+	'members_ipban_tips' => '<li>此操作需要在管理組內開啟相關權限。</li><li>如果您是站點管理員，可以使用CIDR格式禁止某段地址。</li><li>如果您不是站點管理員，您將無法使用CIDR且只能對自己添加的項目進行編輯或刪除。</li>',
 	'members_ipban_location' => '地理位置',
 	'members_ipban_input' => '導入禁止 IP 列表',
-	'members_ipban_input_tips' => '<li>此操作需要在管理組內開啟相關權限，只有站點管理員可以使用。</li><li>可以使用以前導出的禁止IP列表，也可以手動編寫以便批量禁止IP。</li><li>你可以 <a href="'.ADMINSCRIPT.'?action=members&operation=ipban&ipact=output">導出現有禁止IP庫</a></li>',
+	'members_ipban_input_tips' => '<li>此操作需要在管理組內開啟相關權限，只有站點管理員可以使用。</li><li>可以使用以前導出的禁止IP列表，也可以手動編寫以便批量禁止IP。</li><li>你可以 <a href="admin.php?action=members&operation=ipban&ipact=output">導出現有禁止IP庫</a></li>',
 	'members_ipban_input_comment' => '手動導入禁止 IP 的格式為「IP地址;有效天數」或者「IP地址」（有效期默認30天），每行一條；也可以導入以前導出的禁止IP地址列表。',
 
 	'members_profile' => '用戶欄目',
@@ -3783,6 +3746,7 @@ $lang = array
 	'members_profile_edit_name' => '欄目名稱',
 	'members_profile_edit_field' => '字段名',
 	'members_profile_edit_field_desc' => '欄目描述',
+	'members_profile_edit_available' => '啟用',
 	'members_profile_edit_field_type' => '填寫類型',
 	'members_profile_edit_display_order' => '顯示順序',
 	'members_profile_edit_display_order_comment' => '值越大顯示越靠後',
@@ -3809,7 +3773,7 @@ $lang = array
 	'members_profile_edit_invisible_comment' => '如果設為是，則不論個人隱私如何設定都不會在個人空間資料頁面顯示',
 	'members_profile_edit_showincard' => '是否在名片中顯示',
 	'members_profile_edit_showinthread' => '是否在帖子中顯示',
-	'members_profile_edit_showinthread_comment' => '選擇是，還需在<a href="'.ADMINSCRIPT.'?action=setting&operation=styles&anchor=viewthread" target="_blank">帖子內容頁</a>中選擇展示位置',
+	'members_profile_edit_showinthread_comment' => '選擇是，還需在<a href="admin.php?action=setting&operation=styles&anchor=viewthread" target="_blank">帖子內容頁</a>中選擇展示位置',
 	'members_profile_edit_showinregister' => '是否在註冊頁面顯示',
 	'members_profile_edit_allowsearch' => '允許搜索',
 	'members_profile_edit_default_privacy' => '默認隱私',
@@ -4165,8 +4129,8 @@ $lang = array
 	'usergroups_edit_basic_disable_periodctrl_comment' => '設置用戶是否可以不受全局設置中設置的特殊時間段禁令限制',
 	'usergroups_edit_basic_radminid' => '關聯管理權',
 	'usergroups_edit_basic_radminid_comment' => '與本用戶組相關聯的管理權限類別，如果選擇「無」，則本用戶組用戶無管理權限；否則，按照管理組中本組的權限賦予用戶管理權限',
-	'usergroups_edit_basic_seccode' => '啟用驗證碼或驗證問答機制',
-	'usergroups_edit_basic_seccode_comment' => '開啟驗證機制可以防止灌水機等，但會增加用戶操作易用度。修改密碼不受此限制，開啟驗證碼或驗證問答後，該設置有效',
+	'usergroups_edit_basic_seccode' => '啟用防灌水驗證碼或驗證問答機制',
+	'usergroups_edit_basic_seccode_comment' => '開啟防灌水驗證機制可以防止灌水機等，但會增加用戶操作易用度。修改密碼不受此限制，開啟防灌水驗證碼或驗證問答後，該設置有效',
 	'usergroups_edit_basic_disable_postctrl' => '發表不受限制',
 	'usergroups_edit_basic_disable_postctrl_comment' => '設置發表是否不受灌水預防和最大字數等',
 	'usergroups_edit_basic_forcesecques' => '強制設置安全提問',
@@ -4387,8 +4351,6 @@ $lang = array
 	'usergroups_edit_credit_exempt_outperm' => '管轄版塊外',
 
 	'usergroups_edit_home' => '空間相關',
-	'usergroups_edit_home_allow_viewprofile' => '允許查看用戶資料',
-	'usergroups_edit_home_allow_viewprofile_comment' => '設置是否允許查看其他用戶的資料信息',
 	'usergroups_edit_home_allow_blog' => '發表日誌',
 	'usergroups_edit_home_allow_blog_mod' => '發表日誌需要審核',
 	'usergroups_edit_home_allow_doing' => '發表記錄',
@@ -4465,7 +4427,6 @@ $lang = array
 	'groups_manage_founder_uid' => '創建者 UID',
 	'groups_editgroup_name' => '群組名',
 	'groups_editgroup_category' => '群組分類',
-	'groups_editgroup_category_comment' => '可以按住 CTRL 多選',
 	'group_mergetype' => '合併分類',
 	'group_mergegroup' => '合併到群組',
 	'group_changetype' => '轉移到分類:',
@@ -5151,6 +5112,7 @@ $lang = array
 	'misc_tag_hot' => '熱門標籤',
 	'misc_tag_search' => '搜索標籤',
 	'misc_tag_threadnum_between' => '主題數介於',
+	'misc_tag_status' => '狀態',
 	'misc_tag_all_delete' => '全部刪除',
 	'misc_tag_all_close' => '全部鎖定',
 	'misc_tag_all_open' => '全部開放',
@@ -5240,6 +5202,7 @@ $lang = array
 	'faq_keywords_comment' => '配合幫助標識用於幫助信息的前台的模版調用',
 	'faq_content' => '幫助內容',
 	'faq_content_comment' => '幫助內容，支持 HTML 代碼',
+	'faq_sortup' => '上級分類',
 	'faq_additem' => '添加新幫助主題',
 	'faq_addcat' => '添加新幫助分類',
 
@@ -5248,15 +5211,13 @@ $lang = array
 	'plugins_visit' => '評分',
 	'plugins_editlink' => '設計',
 	'plugins_validator' => '檢查更新',
-	'plugins_validator_new' => '發現新版({updatecount})',
-	'plugins_question' => '插件問題求助',
 	'plugins_list' => '插件列表',
 	'plugins_system' => '系統插件',
 	'plugins_install' => '安裝新插件',
 	'plugins_newcomment' => '以下為插件目錄 source/plugin/ 下未安裝的插件',
 	'plugins_menu' => '插件',
 	'plugins_name' => '插件名稱',
-	'plugins_unavailable' => '未啟用',
+	'plugins_unavailable' => '本插件未被啟用',
 	'plugins_empty' => '空',
 	'plugins_directory' => '插件目錄',
 	'plugins_identifier' => '唯一標識符',
@@ -5275,7 +5236,6 @@ $lang = array
 	'plugins_config_uninstall' => '卸載',
 	'plugins_config_upgrade' => '更新',
 	'plugins_config_delete' => '卸載',
-	'plugins_config_uninstall_tips' => '您確定要把{pluginname}插件卸載而不是可逆的刪除由{pluginname}插件產生的所有數據麼？',
 	'plugins_config_upgrade_other' => '您確定要把 {pluginname} {version} 插件更新到以下版本嗎？',
 	'plugins_config_uninstallplugin' => '卸載此插件',
 	'plugins_edit' => '設計插件',
@@ -5288,7 +5248,7 @@ $lang = array
 	'plugins_edit_copyright' => '版權信息(copyright)',
 	'plugins_edit_copyright_comment' => '設置插件的版權信息，最多 100 個字節，一旦設置無法更改',
 	'plugins_edit_identifier' => '唯一標識符(identifier)',
-	'plugins_edit_identifier_comment' => '插件的唯一英文標識，不能夠與現有插件標識重複。可使用字母、數字、下劃線命名，不能包含其他符號或特殊字符，需以字母開頭，最大 40 個字節',
+	'plugins_edit_identifier_comment' => '插件的唯一英文標識，不能夠與現有插件標識重複。可使用字母、數字、下劃線命名，不能包含其他符號或特殊字符，最大 40 個字節',
 	'plugins_edit_adminid' => '後台權限等級(adminid)',
 	'plugins_edit_adminid_comment' => '使用管理中心中插件接口自帶的插件參數設置程序所需的最低權限等級要求。注意: 插件的後台模塊擁有自己的權限設置，因此不受此限制',
 	'plugins_edit_directory' => '插件目錄(directory)',
@@ -5433,7 +5393,7 @@ $lang = array
 	'card' => '充值卡密',
 	'card_make_tips' => '<li>生成卡密時，簡單的規則或較小的生成張數可能導致實際生成張數小於預設生成張數。</li>',
 	'card_config_open' => '允許前台充值',
-	'card_config_open_comment' => '設置是否允許前台充值，關閉前台充值功能，不影響後台卡密的生成<br />充值卡密驗證碼開關：<a href="'.ADMINSCRIPT.'?action=setting&operation=seccheck">全局->安全->驗證設置</a>',
+	'card_config_open_comment' => '設置是否允許前台充值，關閉前台充值功能，不影響後台卡密的生成<br />充值卡密驗證碼開關：<a href="'.ADMINSCRIPT.'?action=setting&operation=seccheck">全局->防灌水->驗證設置</a>',
 	'card_number' =>'卡密',
 	'card_number_unit' => '位',
 	'card_make_rule' => '卡密生成規則',
@@ -5469,7 +5429,7 @@ $lang = array
 	'card_log_num' => '操作數量',
 	'succeed_num' => '成功數',
 	'fail_num' => '失敗數',
-	'card_manage_tips' => '<li>導出充值卡密最多支持 10000 條數據，導出的文件可用 EXCEL、WPS表格、<a href="https://docs.qq.com/" target="_blank">騰訊文檔</a>等工具打開。</li>',
+	'card_manage_tips' => '<li>導出充值卡密最多支持 10000 條數據，導出的 .xls 文件可用 EXCEL 等工具打開。</li>',
 	'card_manage_title' => '充值卡密列表',
 	'card_status' => '狀態',
 	'card_manage_status_1' => '未使用',
@@ -5563,11 +5523,6 @@ $lang = array
 	'tasks_install' => '安裝',
 	'tasks_upgrade' => '升級',
 	'tasks_uninstall' => '卸載',
-	'tasks_status' => '狀態',
-	'tasks_status_0' => '未啟用',
-	'tasks_status_1' => '未上線',
-	'tasks_status_2' => '進行中',
-	'tasks_status_3' => '已結束',
 
 	'tasks_tips' => '<li>只有標記為「可用」狀態的任務，會員才能訪問並申請。</li>',
 	'tasks_tips_edit' => '<li>只有任務標示為「可用」狀態，會員才可能看到並參與他。</li><li>任務是可以設置開始時間的，您可以預定某個任務何時開始。如果沒有設置，那麼這個任務默認就是開始了。</li>',
@@ -5687,8 +5642,8 @@ $lang = array
 	'ec_tenpay_checklink_credit' => '積分充值訂單測試',
 	'ec_tenpay_checklink_virtualgoods' => '虛擬商品訂單測試',
 	'ec_tenpay_checklink_goods' => '實物商品訂單測試',
-	'ec_tenpay_tips' => '<li>“財付通”(<a href="http://www.tenpay.com" target="_blank">http://www.tenpay.com</a>)是騰訊公司創辦的中國領先的在線支付平台，為Discuz! 用戶提供積分購買交易平台。 </li><li>如需啟用積分充值即時到賬，請使用財付通<b>企業版</b>並開通<b>即時到賬交易</b>；否則，只需要開通“ <b>中介擔保交易</b>”即可。 </li>
-<li><b>由於涉及現金交易，為避免因操作不當而造成的資金損失，請在開始使用財付通積分交易功能(不包含財付通按鈕功能)前，務必仔細閱讀《用戶使用說明書》中有關電子商務的部分，當確認完全理解和接受相關流程及使用方法後再進行相關設置。 </b></li><li>您可以設置允許用戶通過現金在線支付的方式，為其交易積分賬戶充值，用於購買帖子內容、購買用戶組權限、積分轉賬或用戶組升級等功能。財付通積分交易功能，需在“積分設置”中啟用交易積分，並同時設置相應的積分策略以滿足不同場合的需要。請務必正確設置您的收款財付通賬號，否則將造成用戶付款後積分無法實時到賬，造成大量需要人工處理的訂單信息。 </li><li>除 Discuz! 官方網站或官方論壇另行通知以外，Discuz! 提供的財付通支付服務每筆交易收取 1% 的手續費。請及時關注相關業務的最新通知，各項政策或流程的變更、調整，以 Discuz! 官方網站或官方論壇提供的信息為準。 </li><li>您使用財付通服務是建立在完全自願的基礎上，除 Discuz! 因主觀惡意的因素造成的資金損失以外，騰訊云不對因使用此功能造成的任何損失承擔責任。 </li><li>財付通服務熱線：0755-83762288-2(全天24小時服務熱線)</li>',
+	'ec_tenpay_tips' => '<li>「財付通」(<a href="http://www.tenpay.com" target="_blank">http://www.tenpay.com</a>)是騰訊公司創辦的中國領先的在線支付平台，為 Discuz! 用戶提供積分購買交易平台。</li><li>如需啟用積分充值即時到賬，請使用財付通<b>企業版</b>並開通<b>即時到賬交易</b>；否則，只需要開通「<b>中介擔保交易</b>」即可。</li>
+<li><b>由於涉及現金交易，為避免因操作不當而造成的資金損失，請在開始使用財付通積分交易功能(不包含財付通按鈕功能)前，務必仔細閱讀《用戶使用說明書》中有關電子商務的部分，當確認完全理解和接受相關流程及使用方法後再進行相關設置。</b></li><li>您可以設置允許用戶通過現金在線支付的方式，為其交易積分賬戶充值，用於購買帖子內容、購買用戶組權限、積分轉賬或用戶組升級等功能。財付通積分交易功能，需在「積分設置」中啟用交易積分，並同時設置相應的積分策略以滿足不同場合的需要。請務必正確設置您的收款財付通賬號，否則將造成用戶付款後積分無法實時到賬，造成大量需要人工處理的訂單信息。</li><li>除 Discuz! 官方網站或官方論壇另行通知以外，Discuz! 提供的財付通支付服務每筆交易收取 1% 的手續費。請及時關注相關業務的最新通知，各項政策或流程的變更、調整，以 Discuz! 官方網站或官方論壇提供的信息為準。</li><li>您使用財付通服務是建立在完全自願的基礎上，除 Discuz! 因主觀惡意的因素造成的資金損失以外，北京康盛新創科技有限責任公司不對因使用此功能造成的任何損失承擔責任。</li><li>財付通服務熱線：0755-83762288-2(全天24小時服務熱線)</li>',
 
 	'ec_orders' => '積分充值訂單',
 	'ec_orders_tips' => '<li>請在開始使用支付寶積分交易訂單管理功能(不包含支付寶按鈕功能)前，務必仔細閱讀《用戶使用說明書》中有關電子商務的部分，當確認完全理解和接受相關流程及使用方法後再進行相關操作。</li><li>如果您的用戶反映在線支付後無法自動為其積分賬戶充值，可能是由於您的支付寶賬戶的通知接口設置有誤，或您的網站無法被支付寶通知系統正常訪問所致。您可以登錄支付寶交易管理界面，通過比對交易詳情人工確認相關訂單。</li><li>訂單信息保留 60 天，因此您只能查詢和管理 60 天之內的訂單信息，超過 60 天的信息將被自動刪除。</li>',
@@ -6045,22 +6000,6 @@ $lang = array
 				<li>每個循環更新數量：數值請在一個合理範圍，不要過大，否則會給服務器帶來負載壓力</li>
 				',
 
-	'remoderate' => '內容重新審核',
-	'remoderate_thread' => '主題/帖子標題及內容重新審核',
-	'remoderate_blog' => '日誌標題及內容重新審核',
-	'remoderate_pic' => '圖片標題重新審核',
-	'remoderate_doing' => '記錄內容重新審核',
-	'remoderate_share' => '分享內容重新審核',
-	'remoderate_comment' => '家園評論內容重新審核',
-	'remoderate_article' => '文章標題及內容重新審核',
-	'remoderate_articlecomment' => '文章評論內容重新審核',
-	'remoderate_topiccomment' => '專題評論內容重新審核',
-	'remoderate_amount' => '每個循環更新數量',
-	'remoderate_processing' => '正在處理 從 {current} 到 {next}',
-	'remoderate_tips' => '<li>當詞語過濾參數有較大變動或鄰近敏感時間點時，可以使用此功能對歷史數據進行重新審核。請盡量避開會員訪問的高峰時間</li>
-				<li>每個循環更新數量：數值請在一個合理範圍，不要過大，否則會給服務器帶來負載壓力</li>
-				',
-
 	'db' => '數據庫',
 	'db_export' => '數據備份',
 	'db_method' => '方式',
@@ -6099,7 +6038,7 @@ $lang = array
 	'db_import_confirm' => '導入和當前 Discuz! 版本不一致的數據極有可能產生無法解決的故障，您確定繼續嗎？',
 	'db_import_confirm_sql' => '您確定導入該備份嗎？',
 	'db_import_confirm_zip' => '您確定解壓該備份嗎？',
-	'db_import_tips' => '<li>本功能在恢復備份數據的同時，將全部覆蓋原有數據，請確定恢復前已將論壇關閉，恢復全部完成後可以將論壇重新開放。</li><li>恢復數據前請在 Discuz! 安裝文件目錄下 utility 文件夾內找到 restore.php 文件，然後將 restore.php 文件上傳到程序文件夾data目錄下。 <b>為了您站點的安全，成功恢復數據後請務必及時刪除 restore.php 文件。</b></li><li>您可以在數據備份記錄處查看站點的備份文件的詳細信息，刪除過期的備份,並導入需要的備份。</li>',
+	'db_import_tips' => '<li>本功能在恢復備份數據的同時，將全部覆蓋原有數據，請確定恢復前已將論壇關閉，恢復全部完成後可以將論壇重新開放。</li><li>恢複數據前請在 Discuz! X2.5 安裝文件目錄下utility文件夾內找到 restore.php 文件，然後將 restore.php 文件上傳到程序文件夾data目錄下。<b>為了您站點的安全，成功恢複數據後請務必及時刪除 restore.php 文件。</b></li><li>您可以在數據備份記錄處查看站點的備份文件的詳細信息，刪除過期的備份,並導入需要的備份。</li>',
 	'do_import_option' => '<ul><li>您可以在本頁面數據備份記錄處導入備份恢複數據，也可以通過在瀏覽器中執行 <a href="{restore_url}" target="_blank">{restore_url}</a> 恢複數據',
 	'db_import_from_server' => '從服務器(填寫文件名或 URL)',
 	'db_import_from_local' => '從本地文件',
@@ -6521,6 +6460,8 @@ $lang = array
 	'cplog_ecommerce_ec_credit' => '信用評級體系',
 	'cplog_tradelog' => '商品交易訂單',
 
+	'cplog_google_config' => 'Google 基本設置',
+
 	'cplog_database_export' => '數據備份',
 	'cplog_database_import' => '數據恢復',
 	'cplog_database_importzip' => '資料恢復',
@@ -6797,6 +6738,9 @@ $lang = array
 	'blockxml_xmlurl_delete_confirm' => '確定要刪除此 第三方模塊嗎？',
 	'blockxml_xmlurl_delete_succeed' => ' 第三方模塊刪除成功 ',
 	'blockxml_xmlurl_add_succeed' => ' 第三方模塊添加成功 ',
+	'blockxml_xmlurl_update_succeed' => 'XML 模塊更新成功',
+	'blockxml_xmlurl_delete_confirm' => '確定要刪除此 XML 模塊嗎？',
+	'blockxml_xmlurl_delete_succeed' => ' XML 模塊刪除成功',
 	'blockxml_import_version_invalid' => '版本號不匹配，當前版本：{cur_version}，系統版本：{set_version}',
 	'CLIENT_NOT_EXISTS' => '客戶端不存在',
 	'SIGN_ERROR' => '數據簽名錯誤',
@@ -6930,8 +6874,6 @@ $lang = array
 	'postsplit_manage_submit' => '確認分表',
 
 	'optimizer_security_tips' => '<li>體檢可以幫助您發現網站問題，消除安全風險</li><li>設置項安全檢測</li><li>安裝插件安全及更新檢測</li>',
-	'optimizer_serversec_tips' => '<li>體檢可以幫助您發現網站底層問題，消除安全風險</li>',
-	'optimizer_performance_tips' => '<li>體檢可以幫助您發現網站性能問題，增強網站性能</li>',
 	'optimizer_check_unit_optimizer_plugin' => '檢測應用是否有新的更新',
 	'optimizer_check_unit_optimizer_upgrade' => '查看是否有新的產品版本',
 	'optimizer_check_unit_optimizer_patch' => '檢測產品是有有漏洞補丁發佈',
@@ -6967,8 +6909,6 @@ $lang = array
 	'optimizer_check_unit_optimizer_security_daily' => '檢測是否開啟防水牆每日優化計劃任務',
 	'optimizer_check_unit_optimizer_postqqonly' => '檢測發帖需要綁定QQ號檢測是否開啟',
 	'optimizer_check_unit_optimizer_aggid' => '檢測「管理員，超級版主，版主」QQ登錄檢測是否開啟',
-	'optimizer_check_unit_optimizer_dos8p3' => '檢測 DOS 8.3 文件名支持是否開啟',
-	'optimizer_check_unit_optimizer_httphost' => '檢測空 HOST 訪問是否開啟',
 
 	'domain_topic' => '專題',
 	'domain_home' => '個人空間',
@@ -6991,6 +6931,7 @@ $lang = array
 	'threads_search_sourcetable' => '搜索以下 thread 分表',
 	'threadsplit_move_tidrange' => 'tid 範圍',
 	'threadsplit_move_to' => '移動到',
+	'threadsplit_manage_threadcount' => '主題數',
 	'threadsplit_manage_table_add' => '添加存檔表',
 	'threadsplit_manage_update' => '更新表信息',
 	'threadsplit_manage_forum_update' => '更新版塊存檔',
@@ -7012,6 +6953,18 @@ $lang = array
 	'membersplit_message10' => '推薦優化用戶表',
 	'membersplit_message100' => '強烈建議優化用戶表',
 	'membersplit_archive' => '立即優化',
+
+	'category_channel' => '基本設置',
+	'category_channel_config' => '基本設置',
+	'category_channel_open' => '是否開啟',
+	'category_channel_title' => '名稱',
+	'category_channel_identifier' => '標識',
+	'category_channel_identifier_comment' => '做為改模塊的唯一標識，如無必要請勿修改',
+
+	'category_option' => '選項管理',
+	'category_sort' => '分類管理',
+	'category_area' => '地區管理',
+	'category_counter' => '統計數據',
 
 	'category_channel' => '基本設置',
 	'category_channel_config' => '基本設置',
@@ -7066,6 +7019,14 @@ $lang = array
 	'connect_setting_t_fids_comment' => '設置在哪些論壇版塊發表的主題可以推送到騰訊微博，可以按住 CTRL 多選',
 	'connect_setting_t_group' => '群組是否允許推送',
 	'connect_setting_t_group_comment' => '設置在群組發表的主題是否可以推送到騰訊微博',
+	'connect_setting_like_allow' => '顯示QQ空間喜歡的鏈接',
+	'connect_setting_like_allow_comment' => '設置是否顯示QQ認證空間，用戶可通過收聽認證空間隨時收取認證空間的動態',
+	'connect_setting_like_url' => '認證空間QQ號碼',
+	'connect_setting_like_url_comment' => '設置認證空間的 QQ 號碼，提交認證申請請<a href="http://opensns.qq.com/" target="_blank">點擊這裡</a>',
+	'connect_setting_turl_allow' => '顯示本站官方微博快速收聽按鈕',
+	'connect_setting_turl_allow_comment' => '用戶點擊快速收聽按鈕，就能立即收聽您所設置的騰訊微博帳號',
+	'connect_setting_turl_code' => '快速收聽代碼',
+	'connect_setting_turl_code_comment' => '請將<a href="http://open.t.qq.com/apps/follow/explain.php" target="_blank">騰訊微博開放平台快速收聽</a>代碼粘貼到此。<strong>獲取代碼時</strong>，樣式設置必須選擇「收聽文字鏈（最簡潔的狀態）」',
 	'connect_member_info' => '用戶信息',
 	'connect_member_bindlog' => 'QQ綁定日誌',
 	'connect_member_bindlog_type' => '操作',
@@ -7086,7 +7047,7 @@ $lang = array
 	'cloudaddons_ftp_setting' => '站點 FTP 設置',
 	'cloudaddons_unwriteabledirs' => '站點 {basedir} 目錄下的以下目錄不可寫，無法在線安裝此應用，請填寫本站點的 FTP 連接參數(本設置不會被保存):<br />{unwriteabledirs}',
 	'cloudaddons_plugin_link' => '獲取更多插件',
-	'cloudaddons_style_link' => '獲取更多模板',
+	'cloudaddons_style_link' => '獲取更多風格',
 	'cloudaddons_linkto' => '在應用中心查看',
 	'plugins_validator_nowupgrade' => '以下插件現在可以更新為新版本，點擊安裝更新',
 	'plugins_validator_newversion' => '以下插件存在新版本，點擊安裝更新',
@@ -7105,16 +7066,11 @@ $lang = array
 # 將 RewriteEngine 模式打開
 RewriteEngine On
 
-# 如 www.discuz.net/bbs/，對應的就是 RewriteBase /bbs/，如果程序放在根目錄中，使用 RewriteBase /
-RewriteBase {siteroot}
+# 修改以下語句中的 /discuz 為您的論壇目錄地址，如果程序放在根目錄中，請將 /discuz 修改為 /
+RewriteBase /discuz
 
 # Rewrite 系統規則請勿修改
 {apache2}
-</pre>
-
-<h1>Nginx Web Server</h1>
-<pre class="colorbox">
-{nginx}
 </pre>
 
 <h1>IIS Web Server(獨立主機用戶)</h1>
@@ -7139,43 +7095,25 @@ RepeatLimit 32
 &lt;/rewrite&gt;
 </pre>
 
-<h1>Lighttpd Web Server</h1>
+<h1>Zeus Web Server</h1>
 <pre class="colorbox">
-url.rewrite-once = (
-{lighttpd})
+{zeus}
 </pre>
 
-<h1>Caddy Web Server</h1>
+<h1>Nginx Web Server</h1>
 <pre class="colorbox">
-{caddy}
+{nginx}
 </pre>',
-
-	'detect_environment' => '運行環境檢測',
-	'contributors' => 'Discuz! 開源貢獻者',
-	'contributors_see' => '點擊此處查看它們',
-	'detect_environment_error' => '你的服務器無法檢測新版，請點擊查看新版',
-	'refresh' => '刷新',
-	'qq_group' => 'QQ群：',
-	'discuz_news' => 'Discuz! 動態',
-	'log_in_to_update' => '暫未獲取到動態，請登錄 Discuz! 社區 查看。',
-	'download_latest' => 'Discuz! X3.4 最新版本下載',
-	'org_name' => '騰訊雲計算（北京）有限責任公司',
-	'dev_manager' => '戴誌康 (Kevin \'Crossday\' Day)',
-	'app_discussion' => 'Discuz! 應用討論區',
-	'org_site' => '公司網站',
-	'purchase_service' => '購買授權',
-	'discussion_area' => '討論區',
-	'app_center' => 'Discuz! 應用中心',
 
 //---------------------------
 // Added by Valery Votintsev
 
 //source/function/function_admincp.php
-	//'upload_selectfile'		=> '瀏覽',//'Browse',
-	//'version_uptodate'		=> '&#x60A8;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684; Discuz! &#x7A0B;&#x5E8F;&#x7248;&#x672C;&#x6709;&#x91CD;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x8BF7;&#x53C2;&#x7167;&#x4EE5;&#x4E0B;&#x63D0;&#x793A;&#x8FDB;&#x884C;&#x53CA;&#x65F6;&#x5347;&#x7EA7;',//'You are currently using up-to-date Discuz! program. To update, please refer to the prompts of following line',
+	'upload_selectfile'		=> '瀏覽',//'Browse',
+	'version_uptodate'		=> '&#x60A8;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684; Discuz! &#x7A0B;&#x5E8F;&#x7248;&#x672C;&#x6709;&#x91CD;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x8BF7;&#x53C2;&#x7167;&#x4EE5;&#x4E0B;&#x63D0;&#x793A;&#x8FDB;&#x884C;&#x53CA;&#x65F6;&#x5347;&#x7EA7;',//'You are currently using up-to-date Discuz! program. To update, please refer to the prompts of following line',
 
 //source/admincp/admincp_index.php - javascript function shownews()
-	//'subscribe'		=> '訂閱',//'Subscribe',
+	'subscribe'		=> '訂閱',//'Subscribe',
 
 //source/admincp/admincp_plugins.php
 	'disable'		=> '禁用',//'Disable',
@@ -7199,6 +7137,13 @@ url.rewrite-once = (
 
 	'nav_language'			=> '語言能力',
 
+	'delete_install_index'		=> '請通過FTP刪除install/index.php!',
+
+	'contributors'			=> 'Discuz! 開源貢獻者',//'Discuz! Open Source Contributors',
+
+	'contributors_link'		=> '點擊此處查看它們',
+
+	'detect_environment'		=> '運行環境檢測',
 );
 
 //------------------------------------------------------
@@ -7209,8 +7154,8 @@ if(file_exists($adminextendfile = DISCUZ_ROOT.'./data/sysdata/cache_adminextend.
 	@include $adminextendfile;
 	foreach($adminextend as $extend) {
 		$extend_lang = array();
-		@include DISCUZ_ROOT.'./source/language/lang_admincp_'.$extend;
-/*vot*/	@include DISCUZ_ROOT.'./source/language/tc/lang_admincp_'.$extend;
+		@include DISCUZ_ROOT.'./source/language/tc/lang_admincp_'.$extend;
 		$lang = array_merge($lang, $extend_lang);
 	}
 }
+
