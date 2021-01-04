@@ -10,7 +10,6 @@
  */
 
 $lang = array (
-
   'undefined_action' => '未定義操作',
   'plugin_nonexistence' => '插件不存在或已關閉',
   'profile_username_protect' => '用戶名包含被系統屏蔽的字符',
@@ -311,6 +310,7 @@ $lang = array (
   'attachment_yetpay' => '您已購買過此附件，無需重複購買，現在將開始附件下載',
   'attachment_buyall' => '本帖所有附件購買成功 ',
   'attachment_buy' => '附件購買成功，開始下載「{filename}」',
+  'attachment_mobile_buy' => '附件購買成功',
   'no_privilege_postimage' => '抱歉，您目前沒有權限上傳圖片，<a href="home.php?mod=spacecp&ac=usergroup" target="_blank">點擊這裡查看權限</a>',
   'no_privilege_postattach' => '抱歉，您目前沒有權限上傳附件，<a href="home.php?mod=spacecp&ac=usergroup" target="_blank">點擊這裡查看權限</a>',
   'thread_closed' => '該帖子已被關閉，不能評論！',
@@ -1021,7 +1021,7 @@ $lang = array (
   'location_login_succeed_mobile' => '歡迎您回來，{username}。點擊進入登錄前頁面',
   'location_login_succeed' => '',
   'location_activation' => '您的帳號處於未激活狀態，點擊進行激活',
-  'login_succeed_inactive_member' => '歡迎您回來，{usergroup} {username}。您的帳號處於非激活狀態，現在將轉入控制面板',
+  'login_succeed_inactive_member' => '歡迎您回來，{usergroup} {username}。您的帳號處於非激活狀態，部分功能可能無法正常使用，現在將轉​​入密碼安全頁面',
   'login_succeed_password_change' => '您的賬戶存在安全隱患，建議立即修改密碼',
   'login_question_empty' => '請選擇安全提問以及填寫正確的答案',
   'login_question_invalid' => '抱歉，安全提問答案填寫錯誤',
