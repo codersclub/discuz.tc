@@ -45,7 +45,7 @@ $lang = array(
 	'database_import_multivol_confirm'	=> '所有分卷文件解壓縮完畢，您需要自動導入備份嗎？導入後解壓縮的文件將會被刪除',//'Extract all the sub-volume file is completed, you need to automatically import the backup? After importing the extracted files will be deleted',
 	'database_import_multivol_start'	=> '正在導入備份文件，程序將自動繼續',//'Importing backup file, the program will continue automatically',
 	'database_import_multivol_redirect'	=> '數據文件 #{volume} 成功導入，程序將自動繼續',//'Data file # {volume} successfully imported, the program will automatically continue',
-	'error_quit_msg'			=> '必須解決以上問題，才能繼續恢復數據',//'Solve the above problem, before continue tthe data recover',
+	'error_quit_msg'			=> '必須解決以上問題，才能繼續恢復數據',//'Solve the above problem, before continue the data recover',
 	'restored_error'			=> '恢復數據功能鎖定，已經恢復過了，如果您確定要恢復數據，請到服務器上刪除./data/restore.lock',//'Recover data function is locked. If you really want to recover data, please go to the server and delete the file ./data/restore.lock',
 
 // Added by Valery Votintsev
