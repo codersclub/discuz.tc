@@ -272,6 +272,6 @@ $lang = array(
 	'ZW'	=> '津巴布韋',
 	'??'	=> '未知',
 	'LAN'	=> 'LAN',
-	'LOC'	=> 'Localhost',
-	'ERR'	=> 'Invalid IP Address',
+	'BAD'	=> '无效的 IP 地址',//'Invalid IP',
+	'ERR'	=> '读取 IP 错误',//'Library Error',
 );
