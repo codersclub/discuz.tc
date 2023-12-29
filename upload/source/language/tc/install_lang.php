@@ -12,7 +12,7 @@ if(!defined('IN_COMSENZ')) {
 	exit('Access Denied');
 }
 
-define('UC_VERNAME', 'International Version');
+define('UC_VERNAME', 'Multilingual Version');
 $lang = array(
 	'SC_UTF8' => '簡體中文 UTF8 版',
 	'TC_UTF8' => '繁體中文 UTF8 版',
@@ -55,6 +55,7 @@ $lang = array(
 	'database_errno_1044' => '無法創建新的數據庫，請檢查數據庫名稱填寫是否正確',
 	'database_errno_1045' => '無法連接數據庫，請檢查數據庫用戶名或者密碼是否正確',
 	'database_connect_error' => '數據庫連接錯誤',
+	'run_sql_error' => 'Discuz! Database Error',
 
 	'step_title_1' => '檢查安裝環境',
 	'step_title_2' => '設置運行環境',
@@ -81,6 +82,7 @@ $lang = array(
 	'install_locked' => '安裝鎖定，已經安裝過了，如果您確定要重新安裝，請到服務器上刪除<br /> '.str_replace(ROOT_PATH, '', $lockfile),
 	'error_stuck_msg' => '安裝進程已經很久沒有進展了，可能相關請求已經因網絡超時或服務器嚴重錯誤而異常退出',
 	'error_quit_msg' => '您必須解決以上問題，安裝才可以繼續',
+	'error_reinstall_msg' => '您的數據庫可能InnoDB性能不佳，請調高PHP超時時間，刷新頁面嘗試重新安裝',
 
 	'step_app_reg_title' => '設置運行環境',
 	'step_app_reg_desc' => '檢測服務器環境以及設置 UCenter',
@@ -90,6 +92,7 @@ $lang = array(
 	'advice_mysqli_connect' => '請檢查 mysqli 模塊是否正確加載',
 	'advice_xml_parser_create' => '該函數需要 PHP 支持 XML 。請聯繫服務商，確定開啟了此項功能',
 	'advice_json_encode' => '該函數需要 PHP 支持 JSON 。請聯繫服務商，確定開啟了此項功能',
+	'advice_dns_get_record' => '該函數需要 PHP 支持 DNS 查詢，PHP 默認自帶。錯誤的編譯安裝或缺少組件等原因容易引起此問題。請聯繫服務商，確定開啟了此項功能',
 	'advice_fsockopen' => '該函數需要 php.ini 中 allow_url_fopen 選項開啟。請聯繫服務商，確定開啟了此項功能',
 	'advice_pfsockopen' => '該函數需要 php.ini 中 allow_url_fopen 選項開啟。請聯繫服務商，確定開啟了此項功能',
 	'advice_stream_socket_client' => '該函數需要 php.ini 中 stream_socket_client 函數開啟。請聯繫服務商，確定開啟了此項功能',
@@ -107,6 +110,7 @@ $lang = array(
 
 	'forceinstall' => '強制安裝',
 	'dbinfo_forceinstall_invalid' => '當前數據庫當中已經含有同樣表前綴的數據表，您可以修改「表名前綴」來避免刪除舊的數據，或者選擇強制安裝。強制安裝會刪除舊數據，且無法恢復',
+	'dbinfo_myisam2innodb_invalid' => 'InnoDB性能不佳，安裝超時失敗的，可以嘗試這種方式強制安裝',
 
 	'click_to_back' => '點擊返回上一步',
 	'adminemail' => '系統信箱 Email',
@@ -117,13 +121,15 @@ $lang = array(
 	'dbpw_comment' => '您的數據庫密碼',
 	'tablepre_comment' => '同一數據庫運行多個論壇時，請修改前綴',
 	'forceinstall_check_label' => '我要刪除數據，強制安裝 !!!',
+	'myisam2innodb_check_label' => '以MyISAM方式安裝，再轉換為InnoDB',
 	'initdbresult_succ' => '數據庫表創建完成',
 	'initdbdataresult_succ' => '數據庫數據初始化完成',
+	'initdbinnodbresult_succ' => 'InnoDB數據表轉換完成',
 	'initsys' => '正在系統初始化',
 
 	'uc_url_empty' => '您沒有填寫 UCenter 的 URL，請返回填寫',
 	'uc_url_invalid' => 'URL 格式錯誤',
-	'uc_url_unreachable' => 'UCenter 的 URL 地址可能填寫錯誤，可能原因有:<br />1. UCenter 路徑不正確或狀態異常<br />2. 應用查詢 UCenter 狀態請求無法發起或被攔截<br />2. UCenter 後台 「 通過 URL 添加應用功能 」 未開啟',
+	'uc_url_unreachable' => 'UCenter 的 URL 地址可能填寫錯誤，可能原因有:<br />1. UCenter 路徑不正確或狀態異常<br />2. 應用查詢 UCenter 狀態請求無法發起或被攔截<br />3. UCenter 後台 「 通過 URL 添加應用功能 」 未開啟',
 	'uc_ip_invalid' => '無法解析該域名，請填寫站點的 IP',
 	'uc_admin_invalid' => 'UCenter 創始人密碼校驗未通過, 可能原因有:<br />1. UCenter 創始人密碼不正確<br />2. 多次錯誤輸入密碼導致創始人用戶和 IP 地址被鎖定<br />3. UCenter 後台 「 通過 URL 添加應用功能 」 未開啟',
 	'uc_data_invalid' => '通信失敗，請檢查 UCenter 的URL 地址是否正確 ',
@@ -356,6 +362,7 @@ $lang = array(
 	'ucfounderpw2' => '重複創始人密碼',
 
 	'clear_dir' => '清空目錄',
+	'innodb' => 'InnoDB數據表轉換',
 	'select_db' => '選擇數據庫',
 	'create_table' => '建立數據表',
 	'succeed' => '成功',

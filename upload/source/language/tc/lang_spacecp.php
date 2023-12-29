@@ -129,7 +129,7 @@ $lang = array(
 
 
 
-	'apply_mtag_manager' => '想申請成為 <a href="\\1" target="_blank">\\2</a> 的群主，理由如下:\\3。<a href="\\1" target="_blank">(點擊這裡進入管理)</a>',
+	'apply_mtag_manager' => '想申請成為 <a href="\\1" target="_blank">\\2</a> 的圈主，理由如下:\\3。<a href="\\1" target="_blank">(點擊這裡進入管理)</a>',
 
 
 	'magicunit' => '個',
@@ -158,9 +158,9 @@ $lang = array(
 	'do_stat_tgroup' => (isset($_G['setting']['navs'][3]['navname']) ? $_G['setting']['navs'][3]['navname'] : ''),
 	'do_stat_home' => (isset($_G['setting']['navs'][4]['navname']) ? $_G['setting']['navs'][4]['navname'] : ''),
 	'do_stat_forum' => (isset($_G['setting']['navs'][2]['navname']) ? $_G['setting']['navs'][2]['navname'] : ''),
-	'do_stat_groupthread' => '群組主題',
+	'do_stat_groupthread' => '圈子主題',
 	'do_stat_post' => '主題回復',
-	'do_stat_grouppost' => '群組回復',
+	'do_stat_grouppost' => '圈子回復',
 	'do_stat_pic' => '圖片',
 	'do_stat_poll' => '投票',
 	'do_stat_event' => '活動',
@@ -215,8 +215,8 @@ $lang = array(
 	'logs_credit_update_RPR' => '後台積分獎懲',
 	'logs_credit_update_RPZ' => '後台積分獎懲清零',
 	'logs_credit_update_FCP' => '付費版塊',
-	'logs_credit_update_BGR' => '創建群組',
-	'buildgroup' => '查看已創建的群組',
+	'logs_credit_update_BGR' => '創建圈子',
+	'buildgroup' => '查看已創建的圈子',
 	'logs_credit_update_reward_clean' => '清零',
 	'logs_select_operation' => '請選擇操作類型',
 	'task_credit' => '任務獎勵積分',
@@ -276,7 +276,7 @@ $lang = array(
 	'portal' => '門戶',
 	'forum' => '論壇',
 	'friend' => '好友',
-	'group' => '群組',
+	'group' => '圈子',
 	'follow' => '廣播',
 	'collection' => '淘帖',
 	'guide' => '導讀',

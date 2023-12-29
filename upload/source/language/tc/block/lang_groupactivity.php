@@ -13,10 +13,10 @@ if(!defined('IN_DISCUZ')) {
 
 $lang = array
 (
-	'groupactivity_fids' => '制定群組',
-	'groupactivity_fids_comment' => '指定群組，多個ID之間請用半角逗號「,」隔開。',
-	'groupactivity_gtids' => '群組分類',
-	'groupactivity_gtids_comment' => '設置群組所在分類，可以按住 CTRL 多選，全選或全不選均為不做限制',
+	'groupactivity_fids' => '制定圈子',
+	'groupactivity_fids_comment' => '指定圈子，多個ID之間請用半角逗號「,」隔開。',
+	'groupactivity_gtids' => '圈子分類',
+	'groupactivity_gtids_comment' => '設置圈子所在分類，可以按住 CTRL 多選，全選或全不選均為不做限制',
 	'groupactivity_uids' => '發起者UID',
 	'groupactivity_uids_comment' => '設置活動發起人UID ，多個 UID 請用半角逗號「,」隔開。',
 	'groupactivity_startrow' => '起始數據行數',
@@ -95,7 +95,7 @@ $lang = array
 	'groupactivity_orderby_monthstart' => '按一月內活動開始時間排序',
 	'groupactivity_orderby_weekexp' => '按一周內報名截止時間排序',
 	'groupactivity_orderby_monthexp' => '按一月內報名截止時間排序',
-	'groupactivity_gviewperm' => '群組瀏覽權限',
+	'groupactivity_gviewperm' => '圈子瀏覽權限',
 	'groupactivity_gviewperm_nolimit' => '不限制',
 	'groupactivity_gviewperm_only_member' => '僅成員',
 	'groupactivity_gviewperm_all_member' => '所有人',

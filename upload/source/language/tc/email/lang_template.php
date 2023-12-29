@@ -55,9 +55,9 @@ $lang = array
 
 	'email_verify_subject' => 'Email 地址驗證',
 	'email_verify_reason' => '在 {$var[\'bbname\']} 進行了新用戶註冊，或用戶修改 Email 使用了這個郵箱地址。',
-	'email_verify_explain' => '帳號激活說明',
+	'email_verify_explain' => '賬號激活說明',
 	'email_verify_explain2' => '如果您是 {$var[\'bbname\']} 的新用戶，或在修改您的註冊 Email 時使用了本地址，我們需要對您的地址有效性進行驗證以避免垃圾郵件或地址被濫用。',
-	'email_verify_click_link' => '您只需點擊下面的鏈接即可激活您的帳號：',
+	'email_verify_click_link' => '您只需點擊下面的鏈接即可激活您的賬號：',
 
 	'email_reset_subject' => 'Email 地址變更提示',
 	'email_reset_reason' => '在 {$var[\'bbname\']} 被登記為用戶郵箱，且該用戶操作 Email 地址變更所致。',
@@ -84,12 +84,12 @@ $lang = array
 	'add_member_intro' => '我是 {$var[\'adminusername\']} ，{$var[\'bbname\']} 的管理者之一。',
 	'add_member_reason' => '您剛剛被添加成為 {$var[\'bbname\']} 的會員，當前 Email 即是我們為您註冊的郵箱地址。',
 	'add_member_no_interest' => '如果您對 {$var[\'bbname\']} 不感興趣或無意成為會員，',
-	'add_member_info' => '帳號信息',
+	'add_member_info' => '賬號信息',
 	'add_member_bbname' => '網站名稱：',
 	'add_member_siteurl' => '網站地址：',
 	'add_member_newusername' => '用戶名：',
 	'add_member_newpassword' => '密碼：',
-	'add_member_can_login' => '從現在起您可以使用您的帳號登錄 {$var[\'bbname\']}，祝您使用愉快！',
+	'add_member_can_login' => '從現在起您可以使用您的賬號登錄 {$var[\'bbname\']}，祝您使用愉快！',
 
 	'birthday_subject' => '祝您生日快樂',
 	'birthday_reason' => '這個郵箱地址在 {$var[\'bbname\']} 被登記為用戶郵箱，<br />
@@ -129,7 +129,7 @@ $lang = array
 	'moderate_member_explain' => '審核結果說明',
 	'moderate_member_explain1' => '通過: 您的註冊已通過審核，您已成為 {$var[\'bbname\']} 的正式用戶。',
 	'moderate_member_explain2' => '否決: 您的註冊信息不完整，或未滿足我們對新用戶的某些要求，您可以根據管理員留言，<a href="home.php?mod=spacecp&ac=profile" target="_blank">完善您的註冊信息</a>，然後再次提交。',
-	'moderate_member_explain3' => '刪除：您的註冊由於與我們的要求偏差較大，或本站的新註冊人數已超過預期，申請已被否決。您的帳號已從數據庫中刪除，將無法再使用其登錄或提交再次審核，請您諒解。',
+	'moderate_member_explain3' => '刪除：您的註冊由於與我們的要求偏差較大，或本站的新註冊人數已超過預期，申請已被否決。您的賬號已從數據庫中刪除，將無法再使用其登錄或提交再次審核，請您諒解。',
 
 	'adv_expiration_subject' =>	'您站點的廣告將於 {day} 天後到期，請及時處理',
 	'adv_expiration_msg' =>	'您站點的以下廣告將於 {$var[\'day\']} 天後到期，請及時處理：',

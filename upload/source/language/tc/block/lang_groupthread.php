@@ -13,10 +13,10 @@ if(!defined('IN_DISCUZ')) {
 
 $lang = array
 (
-	'groupthread_fids' => '群組ID',
-	'groupthread_fids_comment' => '指定群組ID，多個ID之間用 , 分割',
-	'groupthread_gtids' => '群組分類',
-	'groupthread_gtids_comment' => '選擇群組分類',
+	'groupthread_fids' => '圈子ID',
+	'groupthread_fids_comment' => '指定圈子ID，多個ID之間用 , 分割',
+	'groupthread_gtids' => '圈子分類',
+	'groupthread_gtids_comment' => '選擇圈子分類',
 	'groupthread_uids' => '樓主UID',
 	'groupthread_uids_comment' => '指定主題作者ID，多個ID之間用 , 分割',
 	'groupthread_keyword' => '標題關鍵字',
@@ -103,7 +103,7 @@ $lang = array
 	'groupthread_lastpost_week' => '7天內',
 	'groupthread_lastpost_month' => '1個月內',
 	'groupthread_orderby_displayorder' => '按默認順序',
-	'groupthread_gviewperm' => '群組瀏覽權限',
+	'groupthread_gviewperm' => '圈子瀏覽權限',
 	'groupthread_gviewperm_nolimit' => '不限制',
 	'groupthread_gviewperm_only_member' => '僅成員',
 	'groupthread_gviewperm_all_member' => '所有人',

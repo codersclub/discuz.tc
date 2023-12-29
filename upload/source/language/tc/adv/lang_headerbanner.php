@@ -18,8 +18,8 @@ $lang = array
 	'headerbanner_index' => '首頁',
 	'headerbanner_fids' => '投放版塊',
 	'headerbanner_fids_comment' => '設置廣告投放的論壇版塊，當廣告投放範圍中包含「論壇」時有效',
-	'headerbanner_groups' => '投放群組分類',
-	'headerbanner_groups_comment' => '設置廣告投放的群組分類，當廣告投放範圍中包含「群組」時有效',
+	'headerbanner_groups' => '投放圈子分類',
+	'headerbanner_groups_comment' => '設置廣告投放的圈子分類，當廣告投放範圍中包含「圈子」時有效',
 	'headerbanner_category' => '投放門戶頻道',
 	'headerbanner_category_comment' => '設置廣告投放的頻道分類，當廣告投放範圍中包含「門戶」時有效',
 );

@@ -13,12 +13,12 @@ if(!defined('IN_DISCUZ')) {
 
 $lang = array
 (
-	'threadlist_name' => '論壇/群組 帖子列表帖位廣告',
+	'threadlist_name' => '論壇/圈子 帖子列表帖位廣告',
 	'threadlist_desc' => '展現方式: 帖位廣告顯示於帖子列表頁第一頁的帖子位置，可以模擬出一個具有廣告意義的帖子地址，吸引訪問者的注意力。',
 	'threadlist_fids' => '投放版塊',
 	'threadlist_fids_comment' => '設置廣告投放的論壇版塊，當廣告投放範圍中包含「論壇」時有效',
-	'threadlist_groups' => '投放群組分類',
-	'threadlist_groups_comment' => '設置廣告投放的群組分類，當廣告投放範圍中包含「群組」時有效',
+	'threadlist_groups' => '投放圈子分類',
+	'threadlist_groups_comment' => '設置廣告投放的圈子分類，當廣告投放範圍中包含「圈子」時有效',
 	'threadlist_pos' => '投放位置',
 	'threadlist_pos_comment' => '設置在主題列表的第幾個主題位置顯示此廣告，如不指定則將隨機位置顯示',
 	'threadlist_mode' => '顯示模式',

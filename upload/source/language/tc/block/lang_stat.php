@@ -15,9 +15,9 @@ $lang = array
 (
 	'stat_option' => '統計選項',
 	'stat_option_posts' => '發帖總數',
-	'stat_option_groups' => '群組總數',
+	'stat_option_groups' => '圈子總數',
 	'stat_option_members' => '會員總數',
-	'stat_option_groupnewposts' => '群組今日發帖',
+	'stat_option_groupnewposts' => '圈子今日發帖',
 	'stat_option_bbsnewposts' => '論壇今日發帖數',
 	'stat_option_bbslastposts' => '論壇昨日發帖數',
 	'stat_option_onlinemembers' => '當前在線會員數',
@@ -32,9 +32,9 @@ $lang = array
 	'stat_edit_showtitle_detail' => '您可以編輯以下對應項來自定義各統計項的顯示名稱',
 
 	'stat_posts' => '帖子',
-	'stat_groups' => '群組',
+	'stat_groups' => '圈子',
 	'stat_members' => '會員',
-	'stat_groupnewposts' => '群組今日發帖',
+	'stat_groupnewposts' => '圈子今日發帖',
 	'stat_bbsnewposts' => '論壇今日發帖',
 	'stat_bbslastposts' => '論壇昨日發帖',
 	'stat_onlinemembers' => '當前在線會員',

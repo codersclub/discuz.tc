@@ -153,13 +153,13 @@ $lang = array (
   'info_interactive' => '信息互動',
   'interactive_help_message' => '<li>來訪用戶：指的是每天訪問本站的唯一用戶數。一個用戶訪問多次，也只算一次</li>
   									<li>{$_G[\'setting\'][\'navs\'][2][\'navname\']}：指的是每天發佈主題、投票、活動、懸賞、辯論、商品和主題回帖的總數量 </li>
-									<li>群組：指的是每天創建{$_G[\'setting\'][\'navs\'][3][\'navname\']}、{$_G[\'setting\'][\'navs\'][3][\'navname\']}主題、{$_G[\'setting\'][\'navs\'][3][\'navname\']}回帖的總數量 </li>
+									<li>圈子：指的是每天創建{$_G[\'setting\'][\'navs\'][3][\'navname\']}、{$_G[\'setting\'][\'navs\'][3][\'navname\']}主題、{$_G[\'setting\'][\'navs\'][3][\'navname\']}回帖的總數量 </li>
 									<li>家園：指的是每天發佈記錄、日誌、圖片、話題、投票、活動、分享和互相評論的總數量 </li>
 									<li>互動：指的是每天用戶之間互相留言、打招呼和的{$_G[\'setting\'][\'navs\'][4][\'navname\']}相應的表態互動總數量 </li>',
   'member_interactive' => '互動',
   'show' => '查看',
   'home' => '家園',
-  'tgroup' => '群組',
+  'tgroup' => '圈子',
   'stat_classification' => '統計分類',
   'stat_date_range' => '統計日期',
   'stat_merge_statistic' => '合併統計',
@@ -615,8 +615,8 @@ $lang = array (
   'manage_comment' => '管理評論',
   'manage_doing' => '管理記錄',
   'manage_feed' => '管理動態',
-  'manage_group_prune' => '群組帖子',
-  'manage_group_threads' => '群組主題',
+  'manage_group_prune' => '圈子帖子',
+  'manage_group_threads' => '圈子主題',
   'manage_share' => '管理分享',
   'member_manage' => '用戶管理',
   'message' => '留言板',
@@ -777,7 +777,7 @@ $lang = array (
   'email_status' => '郵箱狀態',
   'group_useful_life' => '有效期至',
   'hours' => '小時',
-  'joined_group' => '已加入群組',
+  'joined_group' => '已加入圈子',
   'online_time' => '在線時間',
   'permission_basic_status' => '自定義頭銜',
   'personal_signature' => '個人簽名',
@@ -872,7 +872,7 @@ $lang = array (
   'del_select_thread_confirm' => '確定要刪除選中的主題嗎？',
   'forum' => '版塊',
   'friend_post' => '好友的帖子',
-  'group' => '群組',
+  'group' => '圈子',
   'hide_thread' => '本頁有 $hiddennum 篇帖子因隱私問題而隱藏',
   'ignored' => '已忽略',
   'last_post' => '最後發帖',
@@ -1442,7 +1442,7 @@ $lang = array (
   'mail_system_credit' => '積分相關',
   'mail_system_friend' => '添加好友請求被確認',
   'mail_system_goods' => '商品狀態變更',
-  'mail_system_group' => '群組邀請',
+  'mail_system_group' => '圈子邀請',
   'mail_system_insys' => '系統提醒',
   'mail_system_magic' => '道具相關',
   'mail_system_mod_member' => '用戶審核狀態',
